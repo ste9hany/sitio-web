@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girls Who Code</title>
+    <!-- Iconos Fotawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate CSS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo1.jpg" alt="Logo de la empresa">
+            <div class="icono-menu" id="menu-mobile">
+                <i class="fa-solid fa-bars" id="icono-hamburguesa"></i>
+            </div>
+        </div>
+        <div class="container-nav" id="menu-movimiento">
+            <nav class="menu-nav">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="views/nosotros.html">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <nav class="menu-social">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <h1>AJ-Technology <span class="gamers">GAMERS</span></h1>
+    </div>
+    <section class="background-section-1">
+        <h2 class="title-secondary">Lo mejor en el ambito <span class="gamers">GAMERS</span></h2>
+        <div class="first-box">
+            <img data-aos="fade-right" src="img/compu-gamer-1.jpg" alt="computadora de escritorio">
+            <div>
+                <h4 class="animate__animated animate__pulse animate__delay-2s animate__infinite">Titulo descriptivo</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae minus nulla aut dignissimos aliquid debitis itaque magni facere, illum minima quae maiores cupiditate perferendis molestiae quaerat, odit autem repellendus?</p>
+            </div>
+        </div>
+    </section>
+    <section class="background-section-2">
+        <h2 class="title-secondary">Lo mejor en el ambito <span class="gamers">GAMERS</span></h2>
+        <div class="first-box">
+            <img class="img-mobile" src="img/compu-gamer-1.jpg" alt="computadora de escritorio">
+            <div>
+                <h4 class="">Titulo descriptivo</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam beatae minus nulla aut dignissimos aliquid debitis itaque magni facere, illum minima quae maiores cupiditate perferendis molestiae quaerat, odit autem repellendus?</p>
+            </div>
+            <img class="img-desktop" src="img/compu-gamer-1.jpg" alt="computadora de escritorio">
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo de empresa">
+        </div>
+        <div class="info">
+            <h4>AJ-Technology</h4>
+            <h4>San Salvador, El Salvador C.A</h4>
+            <h4>info-ajtechnology@ajtechnology.com</h4>
+        </div>
+        <div class="social-media">
+            <nav class="menu-social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.getElementById('menu-mobile');
+        const movimiento = document.getElementById('menu-movimiento');
+        const icono = document.getElementById('icono-hamburguesa');
+        
+        menu.addEventListener('click', function(){
+            if(movimiento.className === 'container-nav'){
+                movimiento.className += ' container-nav-2';
+                icono.className += ' fa-x';
+            } else {
+                movimiento.className = 'container-nav';
+                icono.className = ' fa-solid fa-bars';
+            }
+        });
+    
+    </script>
+</body>
+</html>
